@@ -65,7 +65,8 @@ export const BookSearch: React.FC = () => {
               <BookContainer>
                 <BookImage src={"/" + book.coverPhotoURL} alt={book.title} />
                 <span>
-                  {book.title}{" "}
+                  {book.title}
+                  {" by "} {book.author}
                   <IconButton aria-label="delete" size="small">
                     <AddIcon fontSize="inherit" />
                   </IconButton>
